@@ -1,0 +1,80 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<meta name="description" content="Machine Learning and Nonparametric Bayes Tutorial"/>
+<meta name="keywords" content="Machine Learning and Nonparametric,Bayes,Tutorial"/>
+<meta name="author" content="Tamara Broderick"/>
+<title>Machine Learning and Nonparametric Bayes Tutorial</title>
+</head>
+
+<body class="course-page">
+<h1>Machine Learning and Nonparametric Bayes Tutorial</h1>
+
+<img src="img/isba2016.png" align="right" height=150>
+This tutorial took place at the <a href="http://www.corsiecongressi.com/isba2016/">ISBA 2016 World Meeting</a> Short Courses at the University of Cagliari in Sardinia, Italy. See <a href="http://www.tamarabroderick.com/tutorials.html">this link</a> for the latest versions and videos of the Nonparametric Bayes parts of this tutorial.
+
+<p>Sunday, June 12
+<br>Machine Learning (Peter Orbanz): 9:00 AM&ndash;12:00 PM
+<br>Nonparametric Bayes Part I (Tamara Broderick): 2:00&ndash;3:00 PM
+<br>Nonparametric Bayes Part II (Tamara Broderick) 3:15&ndash;5:00 PM
+</p>
+
+<p>
+<b>Instructors</b>:
+<br>&nbsp; Professor <a href="http://stat.columbia.edu/~porbanz/">Peter Orbanz</a> and Professor <a href="http://www.tamarabroderick.com">Tamara Broderick</a>
+<br>&nbsp; Email: <img src="img/broderick_email.png" height=16em style="position: relative; top: 1.5px;">
+</p>
+
+<hr>
+
+<h2>Description</h2>
+
+This tutorial consists of two parts, one on Machine Learning, one on Bayesian Nonparametrics.
+
+<p>The machine learning part of the tutorial will try to give an overview of some widely used methods such as neural networks, SVMs, and Random Forests, and of how they relate to each other.
+
+<p>Nonparametric Bayesian methods make use of infinite-dimensional mathematical structures to allow the practitioner to learn more from their data as the size of their data set grows. What does that mean, and how does it work in practice? In this part of the tutorial, we'll cover why machine learning and statistics need more than just parametric Bayesian inference. We'll introduce such foundational nonparametric Bayesian models as the Dirichlet process and Chinese restaurant process and touch on the wide variety of models available in nonparametric Bayes. Along the way, we'll see what exactly nonparametric Bayesian methods are and what they accomplish.
+
+<h2>Materials</h2>
+<h3> Machine Learning </h3>
+<ul>
+<li><a href="files/porbanz_Cagliari16Jun.pdf">[Slides]</a>
+</li>
+</ul>
+
+<h3> Nonparametric Bayes </h3>
+<ul>
+<li><a href="https://github.com/tbroderick/bnp_tutorial/blob/2016isba/README.txt">README</a> for demos </li>
+</li>
+<li><a href="files/broderick_isba_short_course_part_i.pdf">[Slides for Part I]</a>
+	<ul>
+	<li>Demo 1 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2016isba/ex1_beta.R">[code]</a>: Beta random variable and random distribution intuition </li>
+	<li>Demo 2 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2016isba/ex2_diri.R">[code]</a>: Dirichlet random variable and random distribution intuition </li>
+	<li>Demo 3 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2016isba/ex3_largeK_distr.R">[code]</a>: K large relative to N intuition; empty components </li>
+	<li>Demo 4 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2016isba/ex4_largeK_count.R">[code]</a>: K large relative to N intuition; growth of number of clusters </li>
+	</ul>
+</li>
+<li><a href="files/broderick_isba_short_course_part_ii.pdf">[Slides for Part II]</a>
+	<ul>
+	<li>Demo 5 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2016isba/ex5_gem.R">[code]</a>: GEM random distribution intuition </li>
+	<li>Demo 6 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2016isba/ex6_dpmm.R">[code]</a>: An exact DPMM simulator </li>
+	</ul>
+</li>
+</ul>
+
+
+<h2>Prerequisites</h2>
+<ul>
+<li>Know what a prior, likelihood, and posterior are.
+<li>Know how to use Bayes' Theorem to calculate a posterior for both discrete and continuous parametric distributions.
+<li>Understand what a generative model is.
+<li>Have a basic idea of what Gibbs sampling is and when it is useful (at least check out the Wikipedia article in advance).
+</ul>
+
+<h3>What we won't cover</h3>
+Gaussian processes are an important branch of nonparametric Bayesian modeling, but we won't have time to cover them here. We'll be focusing on the discrete, or Poisson point process, side of nonparametric Bayesian inference. 
+
+</body>
+
+</html>

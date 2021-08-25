@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
+<html lang="en">
+<head>
+  <title>Tamara Broderick</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<style>
+body {
+    padding-bottom: 1000px;
+}
+.border-0{
+    	border-style: solid;
+	border-width: 1pt;
+	padding: 5px;
+}
+</style>
+
+
+<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+				  <li><a href="index.html">T. Broderick</a></li>
+				  <li><a href="index.html#group">My group</a></li>
+				  <li><a href="index.html#work">Want to work with me?</a></li>
+				  <li><a href="papers.html">Publications</a></li>
+				  <li><a href="present.html">Research seminars</a></li> 
+				  <li><a href="tutorials.html">Tutorials</a></li> 
+				  <li><a href="awards.html">Awards</a></li>
+				  <li><a href="misc.html">Miscellany</a></li> 
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+  
+  <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Entries Column -->
+            <div class="col-md-8" style="height: 100vh;">
+            
+		<p>Below you can find information, videos, and slides for some of the research talks I have given.
+
+		<p>
+                <ul>
+                <li id="amip_videos"><b>An Automatic Finite-Sample Robustness Metric: Can Dropping a
+Little Data Change Conclusions?</b>
+         	         <a href="#" data-toggle="collapse" data-target="#2021-02-11" aria-expanded="false" aria-controls="collapseExample">[toggle abstract]</a>
+                              <div class="collapse" id="2021-02-11">
+                              <div class="card card-body border-0">
+                                <p class="card-text">We propose a method to assess the sensitivity of data
+analyses to the removal of a small fraction of the data set. Analyzing
+all possible data subsets of a certain size is computationally
+prohibitive, so we provide a finite-data metric to approximately
+compute the number (or fraction) of observations that has the greatest
+influence on a given result when dropped. We call our resulting metric
+the Approximate Maximum Influence Perturbation. Our approximation is
+automatically computable and works for common estimators --- including
+(but not limited to) OLS, IV, GMM, MLE, and variational Bayes. We
+provide explicit finite-sample error bounds on our approximation for linear
+and instrumental variables regressions. At minimal computational cost, our
+metric provides an exact finite-data lower bound on sensitivity for
+any estimator, so any non-robustness our metric finds is conclusive.
+We demonstrate that the Approximate Maximum Influence Perturbation is
+driven by the signal-to-noise ratio in the inference problem, is not
+reflected in standard errors, does not disappear asymptotically, and
+is not a product of misspecification. We focus on econometric analyses
+in our applications. Several empirical applications show that even
+2-parameter linear regression analyses of randomized trials can be
+highly sensitive. While we find some applications are robust, in
+others the sign of a treatment effect can be changed by dropping much less
+than 1&percnt; of the sample even when standard errors are small.</p>
+                              </div>
+                            </div>
+                         <ul>
+			<li> <a href="https://youtu.be/w8OX0lK1CKo">[youtube video: 2021 February 11]</a>. Machine Learning and Friends Lunch, University of Massachusetts Amherst, MA, USA.
+			</li>
+			<li> <a href="files/broderick_2021_amip.pdf">[slides pdf]</a>
+			</li>
+			</ul>
+		</li>
+                <li><b>Nomon: A Single-Switch Interface for Assistive Technology</b>
+         	         <a href="#" data-toggle="collapse" data-target="#2020-07-29" aria-expanded="false" aria-controls="collapseExample">[toggle abstract]</a>
+                              <div class="collapse" id="2020-07-29">
+                              <div class="card card-body border-0">
+                                <p class="card-text">Nomon is our open-source software designed to allow
+single-switch communication, drawing, gaming, and other GUI usage
+for individuals with severe motor impairments (e.g. patients with
+cerebral palsy, locked-in
+syndrome, etc). Nomon uses Bayesian machine learning and modified
+kernel density estimation to adapt automatically to an individual's
+switch activation ("clicking") ability. In particular, Nomon
+(automatically) allows a person
+who clicks precisely to make a selection quickly and allows a person
+who clicks imprecisely more time to make a selection without error.
+Initial user studies demonstrate the usefulness of Nomon in practice.
+We are currently working on conducting longer-time-scale user studies
+in both able-bodied
+and motor-impaired populations to better understand the performance of Nomon.</p>
+                              </div>
+                            </div>
+                         <ul>
+			<li> <a href="https://youtu.be/JeBf6Xgh1jQ">[youtube video: 2021 July 29]</a>. Universidade Federal do Rio de Janeiro, Rio de Janeiro, Brazil.
+			</li>
+			</ul>
+		</li>
+                <li id="acv"><b>Approximate Cross Validation for Large Data and High Dimensions</b>
+         	         <a href="#" data-toggle="collapse" data-target="#2020-01-14" aria-expanded="false" aria-controls="collapseExample">[toggle abstract]</a>
+                              <div class="collapse" id="2020-01-14">
+                              <div class="card card-body border-0">
+                                <p class="card-text">The error or variability of statistical and machine learning algorithms is
+often assessed by repeatedly re-fitting a model with different
+weighted versions of the observed data. The ubiquitous tools of
+cross-validation (CV) and the bootstrap are examples of this
+technique. These methods are powerful in large part due to their model
+agnosticism but can be slow to run on modern, large data sets due to
+the need to repeatedly re-fit the model. We use a linear approximation
+to the dependence of the fitting procedure on the weights, producing
+results that can be faster than repeated re-fitting by orders of
+magnitude. This linear approximation is sometimes known as the
+"infinitesimal jackknife" (IJ) in the statistics literature, where it
+has mostly been used as a theoretical tool to prove asymptotic results. We
+provide explicit finite-sample error bounds for the infinitesimal
+jackknife in terms of a small number of simple, verifiable
+assumptions. Without further modification, though, we note that the IJ
+deteriorates in accuracy in high dimensions and incurs a running time
+roughly cubic in dimension. We additionally show, then, how
+dimensionality reduction can be used to successfully run the IJ in
+high dimensions in the case of leave-one-out cross validation (LOOCV).
+Specifically, we consider L1 regularization for generalized linear
+models. We prove that, under mild conditions, the resulting LOOCV
+approximation exhibits computation time and accuracy that depend on
+the (small) recovered support size rather than the full dimension.
+Simulated and real-data experiments support our theory.</p>
+                              </div>
+                            </div>
+                         <ul>
+			<li> <a href="https://youtu.be/K2-f96ciuNQ">[youtube video: 2020 January 14]</a>. <i>Statistics and Computation</i>, Alan Turing Institute, London, UK.
+			</li>
+			<li> <a href="files/broderick_2020_approx_cv.pdf">[slides pdf]</a>
+			</li>
+			</ul>
+		</li>
+                <li id="acv_complex"><b>Approximate Cross Validation for Complex Models</b>
+         	         <a href="#" data-toggle="collapse" data-target="#2020-06-22" aria-expanded="false" aria-controls="collapseExample">[toggle abstract]</a>
+                              <div class="collapse" id="2020-06-22">
+                              <div class="card card-body border-0">
+                                <p class="card-text">Many modern data analyses benefit from explicitly modeling
+dependence structure in data -- such as measurements across time or
+space, ordered words in a sentence, or genes in a genome.
+Cross-validation is the gold standard to evaluate these analyses but
+can be prohibitively slow due to the need to re-run already-expensive
+learning algorithms many times. Our previous work (presented at the
+last TRAC Workshop) has shown approximate cross-validation (ACV)
+methods provide a fast and provably accurate alternative in the
+setting of empirical risk minimization. But our previous ACV work was
+restricted to simpler models by the assumptions that (i) data are
+independent and (ii) an exact initial model fit is available. In
+structured data analyses, (i) is always untrue, and (ii) is often
+untrue. In the present work, we address (i) by extending ACV to models
+with dependence structure. To address (ii), we verify – both
+theoretically and empirically – that ACV quality deteriorates smoothly
+with noise in the initial fit. We demonstrate the accuracy and
+computational benefits of our proposed methods on a diverse set of
+real-world applications.</p>
+                              </div>
+                            </div>
+                         <ul>
+			<li> <a href="https://youtu.be/pZ7XojW0pMo">[youtube video: 2020 June 22]</a>. <i>Trustworthy and Robust AI Collaboration (TRAC) Workshop</i>, Microsoft Research.
+			</li>
+			</ul>
+		</li>
+                <li id="skim"><b>Fast Discovery of Pairwise Interactions in High Dimensions using Bayes</b>
+         	         <a href="#" data-toggle="collapse" data-target="#2020-09-09" aria-expanded="false" aria-controls="collapseExample">[toggle abstract]</a>
+                              <div class="collapse" id="2020-09-09">
+                              <div class="card card-body border-0">
+                                <p class="card-text">Discovering interaction effects on a response of interest is
+a fundamental problem in medicine, economics, and many
+other disciplines. In theory, Bayesian methods for
+discovering pairwise interactions enjoy many benefits such as coherent
+uncertainty quantification, the ability to incorporate background
+knowledge, and desirable shrinkage properties. In practice, however,
+Bayesian methods are often computationally intractable for problems
+of even moderate dimension p. Our key insight is that many
+hierarchical models of practical interest admit a particular Gaussian
+process (GP) representation; the GP allows us to capture the posterior
+with a vector of O(p) kernel hyper-parameters rather than O(p^2)
+interactions and main effects. With the implicit representation, we
+can run Markov chain Monte Carlo (MCMC) over model hyper-parameters in
+time and memory linear in p per iteration. We focus on
+sparsity-inducing models; on datasets with a variety of
+covariate behaviors, we show that our method: (1) reduces runtime by orders of
+magnitude over naive applications of MCMC, (2) provides lower Type I
+and Type II error relative to state-of-the-art LASSO-based approaches,
+and (3) offers improved computational scaling in high dimensions
+relative to existing Bayesian and LASSO-based approaches.</p>
+                              </div>
+                            </div>
+                         <ul>
+			<li> <a href="https://youtu.be/Xnxnoq3oQCk&t=2609">[youtube video: 2020 September 9]</a>. Models, Inference and Algorithms seminar series, Broad Institute, Cambridge, MA, USA.
+			</li>
+			<li> <a href="files/broderick_2020_interactions.pdf">[slides pdf]</a>
+			</li>
+			</ul>
+		</li>
+                <li id="bayes_coresets"><b>Automated Scalable Bayesian Inference via Data Summarization</b>
+         	         <a href="#" data-toggle="collapse" data-target="#2018-11-09" aria-expanded="false" aria-controls="collapseExample">[toggle abstract]</a>
+                              <div class="collapse" id="2018-11-09">
+                              <div class="card card-body border-0">
+                                <p class="card-text">The use of Bayesian methods in large-scale data settings is attractive
+because of the rich hierarchical relationships, uncertainty
+quantification, and prior specification these methods provide. Many
+standard Bayesian inference algorithms are often computationally
+expensive, however, so their direct application to large datasets can
+be difficult or infeasible. Other standard algorithms sacrifice
+accuracy in the pursuit of scalability. We take a new approach.
+Namely, we leverage the insight that data often exhibit approximate
+redundancies to instead obtain a weighted subset of the data (called a
+"coreset") that is much smaller than the original dataset. We can then
+use this small coreset in existing Bayesian inference algorithms
+without modification. We provide theoretical guarantees on the size
+and approximation quality of the coreset. In particular, we show that
+our method provides geometric decay in posterior approximation error
+as a function of coreset size. We validate on both synthetic and real
+datasets, demonstrating that our method reduces posterior
+approximation error by orders of magnitude relative to uniform random
+subsampling.</p>
+                              </div>
+                            </div>
+                         <ul>
+			<li> <a href="https://www.youtube.com/watch?v=sz8f--kQqDQ">[youtube video: 2018 November 9]</a>. Michigan Institute for Data Science (MIDAS), University of Michigan, USA.
+			</li>
+			<li> <a href="files/broderick_2018_data_summarization.pdf">[slides pdf]</a>
+			</li>
+			</ul>
+		</li>
+		<li id="lrvb"><b>Fast Quantification of Uncertainty and Robustness with Variational Bayes</b>
+         	         <a href="#" data-toggle="collapse" data-target="#2016-08-23" aria-expanded="false" aria-controls="collapseExample">[toggle abstract]</a>
+                              <div class="collapse" id="2016-08-23">
+                              <div class="card card-body border-0">
+                                <p class="card-text">Bayesian analysis, the posterior follows from the data and a choice
+of a prior and a likelihood. These choices may be somewhat subjective
+and reasonably vary over some range. Thus, we wish to measure the
+sensitivity of posterior estimates to variation in these choices.
+While the field of robust Bayes has been formed to address this
+problem, its tools are not commonly used in practice.
+We demonstrate that variational
+Bayes (VB) techniques are readily amenable to robustness analysis.
+Since VB casts posterior inference as an optimization problem, its
+methodology is built on the ability to calculate derivatives of
+posterior quantities with respect to model parameters. We use this
+insight to develop local prior robustness measures for mean-field
+variational Bayes (MFVB), a particularly popular form of VB due to its
+fast runtime on large data sets. A potential problem with MFVB is that
+it has a well-known major failing: it can severely underestimate
+uncertainty and provides no information about covariance. We
+generalize linear response methods from statistical physics to deliver
+accurate uncertainty estimates for MFVB---both for individual
+variables and coherently across variables. We call our method linear
+response variational Bayes (LRVB).</p>
+                              </div>
+                            </div>
+                         <ul>
+			<li> <a href="https://www.youtube.com/watch?v=hgL6NKSDURU">[youtube video: 2017 August 23]</a>. Microsoft Research New England.
+			</li>
+			<li> <a href="files/broderick_2016_lrvb.pdf">[slides pdf]</a>
+			</li>
+			<li>
+         	         <a href="#" data-toggle="collapse" data-target="#lrvb_more" aria-expanded="false" aria-controls="collapseExample">[toggle other versions of this talk]</a>
+                              <div class="collapse" id="lrvb_more">
+                              <div class="card card-body border-0">
+                                <p class="card-text">
+                                <ul>
+                                <li> <a href="https://www.youtube.com/watch?v=acbz057qDe0">[youtube video: 2016 October 17]</a>. Biostatistics-Biomedical Informatics Big Data (B3D) Seminar, Harvard University, USA.
+                                </li>
+                                <li> <a href="https://www.youtube.com/watch?v=p6k4cgQlZWM">[youtube video: 2016 August 23]</a>. 2016 Big Data Conference &amp; Workshop, Harvard, Cambridge, Massachusetts, USA.
+                                </li>
+                                </ul>
+                                </p>
+                                </div>
+                                </div>
+                          </li>
+			</ul>
+		</li>
+		<li><b>Posteriors, conjugacy, and exponential families for completely random measures</b>
+         	         <a href="#" data-toggle="collapse" data-target="#2015-06-23" aria-expanded="false" aria-controls="collapseExample">[toggle abstract]</a>
+                              <div class="collapse" id="2015-06-23">
+                              <div class="card card-body border-0">
+                                <p class="card-text">We demonstrate how to calculate posteriors for general
+Bayesian nonparametric priors and likelihoods based on completely
+random measures (CRMs).We further show how to represent Bayesian
+nonparametric priors as a sequence of finite draws using a
+size-biasing approach---and how to represent full Bayesian
+nonparametric models via finite marginals. Motivated by conjugate
+priors based on exponential family representations of likelihoods, we
+introduce a notion of exponential families for CRMs, which we call
+exponential CRMs. This construction allows us to specify automatic
+Bayesian nonparametric conjugate priors for exponential CRM
+likelihoods. Wedemonstrate that our exponential CRMs allow
+particularly straightforward recipes for size-biased and marginal
+representations of Bayesian nonparametric models. Along the way, we
+prove that the gamma process is a conjugate prior for the Poisson
+likelihood process and the beta prime process is a conjugate prior for
+a process we call the odds Bernoulli process. We deliver a size-biased
+representation of the gamma process and a marginal representation of
+the gamma process coupled with a Poisson likelihood process.</p>
+                              </div>
+                            </div>
+                         <ul>
+			<li> <a href="files/broderick_2015_exp_fams.pdf">[slides pdf]</a>
+			</li>
+			</ul>
+		</li>
+		<li><b>Feature allocations, probability functions, and paintboxes</b>
+         	         <a href="#" data-toggle="collapse" data-target="#2013-02-01" aria-expanded="false" aria-controls="collapseExample">[toggle abstract]</a>
+                              <div class="collapse" id="2013-02-01">
+                              <div class="card card-body border-0">
+                                <p class="card-text">The problem of inferring a clustering of a data set has been the subject of much research in Bayesian analysis, and there currently exists a solid mathematical  foundation for Bayesian approaches to clustering. In particular, the class of probability distributions over partitions of a data set has been characterized in a number of ways, including via exchangeable partition probability functions (EPPFs) and the Kingman paintbox. Here, we develop a generalization of the clustering problem, called feature allocation, where we allow each data point to belong to an arbitrary, non-negative integer number of groups, now called features or topics. We define and study an "exchangeable feature probability function" (EFPF)---analogous to the EPPF in the clustering setting---for certain types of feature models. Moreover, we introduce a "feature paintbox" characterization---analogous to the Kingman paintbox for clustering---of the class of exchangeable feature models. We use this feature paintbox construction to provide a further characterization of the subclass of feature allocations that have EFPF representations.</p>
+                              </div>
+                            </div>
+                         <ul>
+			<li> <a href="http://projects.iq.harvard.edu/applied.stats.workshop-gov3009/presentations/tamara-broderick-mit">[video: 2015 February 25]</a>. Harvard Applied Statistics Workshop, Harvard, Cambridge, Massachusetts, USA.
+			</li>
+			<li> <a href="files/broderick_2014_feature_allocations.pdf">[slides pdf]</a>
+			</li>
+			<li>
+         	         <a href="#" data-toggle="collapse" data-target="#features_more" aria-expanded="false" aria-controls="collapseExample">[toggle other versions of this talk]</a>
+                              <div class="collapse" id="features_more">
+                              <div class="card card-body border-0">
+                                <p class="card-text">
+                                <ul>
+                                <li> <a href="https://archive.org/details/Redwood_Center_2014_10_15_Tamara_Broderick"> [video: 2014 October 15]</a>. Redwood Center for Theoretical Neuroscience, UC Berkeley, Berkeley, California, USA.
+                                </li>
+                                </ul>
+                                </p>
+                                </div>
+                                </div>
+                          </li>
+			</ul>
+		</li>
+		<li><b>Streaming variational Bayes</b>
+         	         <a href="#" data-toggle="collapse" data-target="#2014-05-14" aria-expanded="false" aria-controls="collapseExample">[toggle abstract]</a>
+                              <div class="collapse" id="2014-05-14">
+                              <div class="card card-body border-0">
+                                <p class="card-text">We present SDA-Bayes, a framework for (S)treaming, (D)istributed, (A)synchronous computation of a Bayesian posterior. The framework makes streaming updates to the estimated posterior according to a user-specified approximation batch primitive. We demonstrate the usefulness of our framework, with variational Bayes (VB) as the primitive, by fitting the latent Dirichlet allocation model to two large-scale document collections. We demonstrate the advantages of our algorithm over stochastic variational inference (SVI) by comparing the two after a single pass through a known amount of data---a case where SVI may be applied---and in the streaming setting, where SVI does not apply.</p>
+                              </div>
+                            </div>
+                         <ul>
+			<li> <a href="files/broderick_2014_streaming_variational.pdf">[slides pdf]</a> <a href="files/broderick_poster_2013_streaming_variational.pdf">[poster pdf]</a>
+			</li>
+			</ul>
+		</li>
+		<li><b>Clusters and features from combinatorial stochastic processes</b>
+         	         <a href="#" data-toggle="collapse" data-target="#2013-11-10" aria-expanded="false" aria-controls="collapseExample">[toggle abstract]</a>
+                              <div class="collapse" id="2013-11-10">
+                              <div class="card card-body border-0">
+                                <p class="card-text"> In partitioning---a.k.a. clustering---data, we associate each data
+point with one and only one of some collection of groups called
+clusters or partition blocks. Here, we formally establish an analogous
+problem, called feature allocation, for associating data points with
+arbitrary non-negative integer numbers of groups, now called features
+or topics. Just as the exchangeable partition probability function
+(EPPF) can be used to describe the distribution of cluster membership
+under an exchangeable clustering model, we examine an analogous
+"exchangeable feature probability function" (EFPF) for certain types
+of feature models. Moreover, recalling Kingman's paintbox theorem as a
+characterization of the class of exchangeable clustering models, we
+develop a similar "feature paintbox" characterization of the class of
+exchangeable feature models. We use this feature paintbox construction
+to provide a further characterization of the subclass of feature
+allocations that have EFPF representations. We examine models such as
+the Bayesian nonparametric Indian buffet process as examples within
+these broader classes.</p>
+                              </div>
+                            </div>
+                         <ul>
+			<li> <a href="http://icerm.brown.edu/html/videos/sp_f12_w1/Clusters_and_features_from_combinatorial_stochastic_processes_%5D_Tamara_Broderick,_University_of_California,_Berkeley.php"> [video: 2012 September 20]</a>. Bayesian Nonparametrics, <i>ICERM Semester Program on Computational Challenges in Probability</i>, Brown University, Providence, Rhode Island, USA.
+			</li>
+			</ul>
+		</li>
+		<li><b>MAD-Bayes: MAP-based asymptotic derivations from Bayes</b>
+         	         <a href="#" data-toggle="collapse" data-target="#2013-06-17" aria-expanded="false" aria-controls="collapseExample">[toggle abstract]</a>
+                              <div class="collapse" id="2013-06-17">
+                              <div class="card card-body border-0">
+                                <p class="card-text">The classical mixture of Gaussians model is related to K-means via <i>small-variance asymptotics</i>: as the covariances of the Gaussians tend to zero, the negative log-likelihood of the mixture of Gaussians model approaches the K-means objective, and the EM algorithm approaches the K-means algorithm.  Kulis &amp; Jordan (2012) used this observation to obtain a novel K-means-like algorithm from a Gibbs sampler for the Dirichlet process (DP) mixture.  We instead consider applying small-variance asymptotics directly to the posterior in Bayesian nonparametric models.  This framework is independent of any specific Bayesian inference algorithm, and it has the major advantage that it generalizes immediately to a range of models beyond the DP mixture.  To illustrate, we apply our framework to the feature learning setting, where the beta process and Indian buffet process provide an appropriate Bayesian nonparametric prior.  We obtain a novel objective function that goes beyond clustering to learn (and penalize new) groupings for which we relax the mutual exclusivity and exhaustivity assumptions of clustering.  We demonstrate several other algorithms, all of which are scalable and simple to implement.  Empirical results demonstrate the benefits of the new framework.</p>
+                              </div>
+                            </div>
+                         <ul>
+			<li> <a href="http://techtalks.tv/talks/mad-bayes-map-based-asymptotic-derivations-from-bayes/58187/">[video: 2013 June 17]</a>. <i>30th International Conference on Machine Learning (ICML 2013)</i>, Atlanta, Georgia, USA. 
+			</li>
+			<li> <a href="files/broderick_2014_mad_bayes.pdf">[slides pdf]</a> <a href="files/broderick_poster_2013_mad_bayes.pdf">[poster pdf]</a>
+			</li>
+			</ul>
+		</li>
+		<li><b>Fast and flexible selection with a single switch</b>
+         	         <a href="#" data-toggle="collapse" data-target="#2013-06-17" aria-expanded="false" aria-controls="collapseExample">[toggle abstract]</a>
+                              <div class="collapse" id="2013-06-17">
+                              <div class="card card-body border-0">
+                                <p class="card-text">Selection methods that require only a single-switch input, such as a button click or blink, are potentially useful for individuals with motor impairments, mobile technology users, and individuals wishing to transmit information securely. We present a single-switch selection method, “Nomon,” that is general and efficient. Existing single-switch selection methods require selectable options to be arranged in ways that limit potential applications. By contrast, traditional operating systems, web browsers, and free-form applications (such as drawing) place options at arbitrary points on the screen. Nomon, however, has the flexibility to select any point on a screen. Nomon adapts automatically to an individual's clicking ability; it allows a person who clicks precisely to make a selection quickly and allows a person who clicks imprecisely more time to make a selection without error. Nomon reaps gains in information rate by allowing the specification of beliefs (priors) about option selection probabilities and by avoiding tree-based selection schemes in favor of direct (posterior) inference. We have developed both a Nomon-based writing application and a drawing application. To evaluate Nomon's performance, we compared the writing application with a popular existing method for single-switch writing (row-column scanning). Novice users wrote 35&percnt; faster with the Nomon interface than with the scanning interface. An experienced user (author TB, with 10 hours practice) wrote at speeds of 9.3 words per minute with Nomon, using 1.2 clicks per character and making no errors in the final text.</p>
+                              </div>
+                            </div>
+                         <ul>
+			<li> <a href='http://videolectures.net/nips09_broderick_ffs/'>[video: 2009 December 10]</a>. Mini-Symposia on Assistive Machine Learning for People with Disabilities, <i>Neural Information Processing Systems (NIPS) 2009</i>, Vancouver, British Columbia, Canada.
+			</li>
+			<li> <a href="https://www.youtube.com/watch?v=qktEuZW92qY">[video: Nomon keyboard tutorial]</a> .
+                          </li>
+                          <li> <a href="https://www.youtube.com/watch?v=QZVfyux3IaU">[video: Example sentence written using Nomon]</a>
+                          </li>
+			</ul>
+		</li>
+                </ul>
+                
+                <div style="margin-top:3%; text-align:justify;">                
+
+		
+
+    <!-- Other people may like it too! -->
+    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://accessibility.mit.edu">Accessibility</a> 
+    <br><a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
+    
+                    
+  		</div>                
+            </div> 
+           
+
+            
+        </div>
+        
+            
+
+
+
+    </div>
+    <!-- /.container -->
+    
+</body>
+
+</html>

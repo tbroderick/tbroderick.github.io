@@ -1,0 +1,82 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<meta name="description" content="Nonparametric Bayes Tutorial"/>
+<meta name="keywords" content="Nonparametric,Bayes,Tutorial"/>
+<meta name="author" content="Tamara Broderick"/>
+<title>Nonparametric Bayes Tutorial</title>
+</head>
+
+<body class="course-page">
+<h1>Nonparametric Bayesian Methods: Models, Algorithms, and Applications</h1>
+
+<img src="img/side-logo.png" align="right" height=150>
+This tutorial is taking place at the <a href="https://sites.google.com/site/jurimarcucci/cide_summer_school/">2017 SIdE Summer School of Econometrics</a> at the Bank of Italy Sadiba Center, Perugia, Italy. <!--See <a href="http://www.tamarabroderick.com/tutorials.html">this link</a> for the latest versions and videos of this tutorial. -->
+
+<p>Day 1: Monday, July 10, 9:00 AM&ndash;10:30 AM, 11:00 AM&ndash;12:30 PM
+<br>Day 2: Tuesday, July 11, 9:00 AM&ndash;10:30 AM, 11:00 AM&ndash;12:30 PM
+<br>Day 3: Wednesday, July 12, 9:00 AM&ndash;10:30 AM, 11:00 AM&ndash;12:30 PM
+<br>Day 4: Thursday, July 13, 9:00 AM&ndash;10:30 AM, 11:00 AM&ndash;12:30 PM
+<br>Day 5: Friday, July 13, 8:30 AM&ndash;9:30 AM, 10:00 AM&ndash;12:00 PM
+</p>
+
+<p>
+<b>Instructor</b>:
+<br>&nbsp; Professor <a href="http://www.tamarabroderick.com">Tamara Broderick</a>
+<br>&nbsp; Email: <img src="img/broderick_email.png" height=16em style="position: relative; top: 1.5px;">
+</p>
+
+<hr>
+
+<h2>Description</h2>
+
+Nonparametric Bayesian methods are used for data analysis in a wide variety of disciplines. These methods make use of infinite-dimensional mathematical structures to allow the practitioner to learn more from their data as the size of their data set grows. What does that mean, and how does it work in practice? In this tutorial, we'll cover why machine learning and statistics need Bayesian methods but also why they need more than <i>just</i> parametric Bayesian inference. We'll introduce such foundational nonparametric Bayesian models as the Dirichlet process, Chinese restaurant process, and Gaussian process and touch on the wide variety of models available in nonparametric Bayes. Along the way, we'll see what exactly nonparametric Bayesian methods are and what they accomplish.
+
+<h2>Materials</h2>
+<ul>
+<li><a href="https://github.com/tbroderick/bnp_tutorial/blob/2017side/README.txt">README</a> for demos </li>
+</li>
+<li><a href="files/broderick_tutorial_2017_side_day1.pdf">[Slides for Day 1]: Foundations of Bayes and BNP, discrete data</a>
+	<ul>
+	<li>Demo 1 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017side/ex1_beta.R">[code]</a>: Beta random variable and random distribution intuition </li>
+	</ul>
+</li>
+<li><a href="files/broderick_tutorial_2017_side_day2.pdf">[Slides for Day 2]: Real-valued data, mixture models, BNP motivation</a>
+	<ul>
+	<li>Demo 2 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017side/ex2_diri.R">[code]</a>: Dirichlet random variable and random distribution intuition </li>
+	<li>Demo 3 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017side/ex3_largeK_distr.R">[code]</a>: K large relative to N intuition; empty components </li>
+	<li>Demo 4 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017side/ex4_largeK_count.R">[code]</a>: K large relative to N intuition; growth of number of clusters </li>
+	</ul>
+</li>
+<li><a href="files/broderick_tutorial_2017_side_day3.pdf">[Slides for Day 3]: Dirichlet process, Monte Carlo</a>
+	<ul>
+	<li>Demo 5 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017side/ex5_gem.R">[code]</a>: GEM random distribution intuition </li>
+	<li>Demo 6 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017side/ex6_dpmm.R">[code]</a>: An exact DPMM simulator </li>
+	<li>Demo 7 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017side/ex7_monte_carlo_pi.R">[code]</a>: Monte Carlo estimation of the mathematical constant pi </li>
+	</ul>
+</li>
+<li><a href="files/broderick_tutorial_2017_side_day4.pdf">[Slides for Day 4]: Mixture model inference (both finite and infinite), Chinese restaurant process</a>
+	<ul>
+	<li>Demo 8 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017side/ex8_mm_sampler.R">[code]</a>: A finite mixture model Gibbs sampler </li>
+	<li>Demo 9 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017side/ex9_dpmm_sampler.R">[code]</a>: A CRP mixture model Gibbs sampler </li>
+	</ul>
+</li>
+<li><a href="files/broderick_tutorial_2017_side_day5.pdf">[Slides for Day 5]: Regression, Gaussian processes, the wide world of BNP</a>
+	<ul>
+	<li>Demo 10 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017side/ex10_linear_regression.R">[code]</a>: Bayesian linear regression intuition </li>
+		<ul>
+		<li>Note: requires supporting <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017side/filled.contour3.R">contour-plotting code</a> obtained from <a href="http://wiki.cbr.washington.edu/qerm/index.php/R/Contour_Plots">this website</a>
+		</li>
+	</ul>
+</li>
+</ul>
+
+<h2>Prerequisites</h2>
+<ul>
+<li>Have taken a course in probability. Know what a joint distribution, conditional distribution, and marginal distribution are. Be familiar and comfortable with probability manipulations and common distributions such as the beta, Bernoulli, Gaussian, etc.
+</ul>
+
+</body>
+
+</html>

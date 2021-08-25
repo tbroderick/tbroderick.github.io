@@ -1,0 +1,76 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<meta name="description" content="Nonparametric Bayes Tutorial"/>
+<meta name="keywords" content="Nonparametric,Bayes,Tutorial"/>
+<meta name="author" content="Tamara Broderick"/>
+<title>Nonparametric Bayesian Methods: Models, Algorithms, and Applications</title>
+</head>
+
+<body class="course-page">
+<h1>Nonparametric Bayesian Methods: Models, Algorithms, and Applications</h1>
+
+This tutorial took place at the Queensland University of Technology (QUT). See <a href="http://www.tamarabroderick.com/tutorials.html">this link</a> for the latest versions of all tutorials.
+
+<p>Part I: Tuesday, January 22, 11:00 AM&ndash;12:30 PM
+<br>Part II: Wednesday, January 23, 11:00 AM&ndash;12:30 PM
+</p>
+
+<p>
+<b>Instructor</b>:
+<br>&nbsp; Professor <a href="http://www.tamarabroderick.com">Tamara Broderick</a>
+<br>&nbsp; Email: <img src="img/broderick_email.png" height=16em style="position: relative; top: 1.5px;">
+</p>
+
+<hr>
+
+<h2>Description</h2>
+
+This tutorial introduces nonparametric Bayes (BNP) as a tool for
+modern data science and machine learning. BNP methods are useful in a
+variety of data analyses---including density estimation without
+parametric assumptions and clustering models that adaptively determine
+the number of clusters. We will demonstrate that BNP allows the data
+analyst to learn more from a data set as the size of the data set
+grows and see how this feat is accomplished. We will describe popular
+BNP models such as the Dirichlet process, Chinese restaurant process,
+Indian buffet process, and hierarchical BNP models---and how they
+relate to each other.
+
+<h2>Materials</h2>
+<ul>
+<li><a href="https://github.com/tbroderick/bnp_tutorial/blob/2017uc/README.txt">README</a> for demos </li>
+</li>
+<li><a href="files/broderick_tutorial_2019_qut_bnp_part_i.pdf">[Slides for Part I]</a>
+	<ul>
+	<li>Demo 1 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017uc/ex1_beta.R">[code]</a>: Beta random variable and random distribution intuition </li>
+	<li>Demo 2 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017uc/ex2_diri.R">[code]</a>: Dirichlet random variable and random distribution intuition </li>
+	<li>Demo 3 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017uc/ex3_largeK_distr.R">[code]</a>: K large relative to N intuition; empty components </li>
+	<li>Demo 4 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017uc/ex4_largeK_count.R">[code]</a>: K large relative to N intuition; growth of number of clusters </li>
+	<li>Demo 5 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017uc/ex5_gem.R">[code]</a>: GEM random distribution intuition </li>
+	</ul>
+</li>
+<li><a href="files/broderick_tutorial_2019_qut_bnp_part_ii.pdf">[Slides for Part II]</a>
+	<ul>
+	<li>Demo 6 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017uc/ex6_dpmm.R">[code]</a>: An exact DPMM simulator </li>
+	<li>Demo 7 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2017uc/ex7_sampler.R">[code]</a>: A CRP mixture model sampler </li>
+	</ul>
+</li>
+</ul>
+
+
+<h2>Prerequisites</h2>
+
+Working knowledge of Bayesian data analysis. Know how
+to use Bayes' Theorem to calculate a posterior for both discrete and
+continuous parametric distributions. Have a basic knowledge of Markov
+chain Monte Carlo (especially Gibbs) sampling for posterior
+approximation.
+
+<h3>What we won't cover</h3>
+Gaussian processes are an important branch of nonparametric Bayesian modeling, but we won't have time to cover them here. We'll be focusing on the discrete, or Poisson point process, side of nonparametric Bayesian inference. 
+
+</body>
+
+</html>

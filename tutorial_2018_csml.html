@@ -1,0 +1,57 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<meta name="description" content="Variational Bayes Tutorial"/>
+<meta name="keywords" content="Variational,Bayes,Tutorial"/>
+<meta name="author" content="Tamara Broderick"/>
+<title>CSML Masterclass</title>
+</head>
+
+<body class="course-page">
+<h1>Centre for Computational Statistics and Machine Learning (CSML) Masterclass</h1>
+
+<a href="http://www.uc.cl/"><img src="img/gatsby.jpg" align="right" height=150></a>
+
+This <a href="https://www.facebook.com/uclcsml/photos/a.430440630378406.1073741825.262087203880417/1704853846270405/">Masterclass series</a> took place at the Gatsby Computational Neuroscience Unit at University College London.
+See <a href="http://www.tamarabroderick.com/tutorials.html">this link</a> for other tutorials. The schedule of lectures is as follows.
+
+<p>Part I: Monday, 2018 June 4, 12:00--1 PM (+ 30 minutes Q&A)
+<br>Part II: Tuesday, 2018 June 5, 12:00--1 PM (+ 30 minutes Q&A)
+<br>Part III: Wednesday, 2018 June 6, 12:00--1 PM (+ 30 minutes Q&A)
+</p>
+
+<p>
+<b>Instructor</b>:
+<br>&nbsp; Professor <a href="http://www.tamarabroderick.com">Tamara Broderick</a>
+<br>&nbsp; Email: <img src="img/broderick_email.png" height=16em style="position: relative; top: 1.5px;">
+</p>
+
+<hr>
+
+<h2>Description and Materials</h2>
+
+<h3> Part I: Variational Bayes: Foundations </h3>
+<a href="files/broderick_csml_2018_part_i_vb.pdf">[Slides for Part I]</a>
+<br>
+Abstract: Bayesian methods exhibit a number of desirable properties for modern data analysis---including (1) coherent quantification of uncertainty, (2) a modular modeling framework able to capture complex phenomena, (3) the ability to incorporate prior information from an expert source, and (4) interpretability. In practice, though, Bayesian inference necessitates approximation of a high-dimensional integral, and some traditional algorithms for this purpose can be slow---notably at data scales of current interest. The tutorial will cover modern tools for fast, approximate Bayesian inference at scale. One increasingly popular framework is provided by "variational Bayes" (VB), which formulates Bayesian inference as an optimization problem. We will examine key benefits and pitfalls of using VB in practice, with a focus on the widespread "mean-field variational Bayes" (MFVB) subtype. We will highlight properties that anyone working with VB, from the data analyst to the theoretician, should be aware of.
+
+<h3>  Part II: Covariances, robustness, and variational Bayes </h3>
+<a href="files/broderick_csml_2018_part_ii_lrvb.pdf">[Slides for Part II]</a>
+<br>
+Abstract: In Bayesian analysis, the posterior follows from the data and a choice of a prior and a likelihood. These choices may be somewhat subjective and reasonably vary over some range. Thus, we wish to measure the sensitivity of posterior estimates to variation in these choices. While the field of robust Bayes has been formed to address this problem, its tools are not commonly used in practice. We demonstrate that variational Bayes (VB) techniques are readily amenable to fast robustness analysis. Since VB casts posterior inference as an optimization problem, its methodology is built on the ability to calculate derivatives of posterior quantities with respect to model parameters. We use this insight to develop local prior robustness measures for mean-field variational Bayes (MFVB), a particularly popular form of VB due to its fast runtime on large data sets. A potential problem with MFVB is that it has a well-known major failing: it can severely underestimate uncertainty and provides no information about covariance. We generalize linear response methods from statistical physics to deliver accurate uncertainty estimates for MFVB---both for individual variables and coherently across variables. We call our method linear response variational Bayes (LRVB).
+
+<h3>Part III: Automated Scalable Bayesian Inference via Data Summarization</h3>
+<a href="files/broderick_csml_2018_part_iii_coresets.pdf">[Slides for Part III]</a>
+<br>
+Abstract: The use of Bayesian methods in large-scale data settings is attractive because of the rich hierarchical relationships, uncertainty quantification, and prior specification these methods provide. Many standard Bayesian inference algorithms are often computationally expensive, however, so their direct application to large datasets can be difficult or infeasible. Other standard algorithms sacrifice accuracy in the pursuit of scalability. We take a new approach. Namely, we leverage the insight that data often exhibit approximate redundancies to instead obtain a weighted subset of the data (called a "coreset") that is much smaller than the original dataset. We can then use this small coreset in existing Bayesian inference algorithms without modification. We provide theoretical guarantees on the size and approximation quality of the coreset. In particular, we show that our method provides geometric decay in posterior approximation error as a function of coreset size. We validate on both synthetic and real datasets, demonstrating that our method reduces posterior approximation error by orders of magnitude relative to uniform random subsampling.
+
+
+<h2>Prerequisites</h2>
+
+Basic familiarity with Bayesian data analysis and its goals. Be familiar with the following concepts: priors, likelihoods, posteriors, Bayes Theorem,
+and conjugacy (for discrete and continuous distributions).
+
+</body>
+
+</html>

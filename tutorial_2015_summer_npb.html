@@ -1,0 +1,71 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<meta name="description" content="Nonparametric Bayes Tutorial"/>
+<meta name="keywords" content="Nonparametric,Bayes,Tutorial"/>
+<meta name="author" content="Tamara Broderick"/>
+<title>Nonparametric Bayes Tutorial</title>
+</head>
+
+<body class="course-page">
+<h1>Nonparametric Bayes Tutorial</h1>
+
+This tutorial took place in the summer of 2015 at MIT.
+See <a href="http://www.tamarabroderick.com/tutorials.html">this link</a> for the latest versions and videos of this tutorial.
+
+<p>Monday, August 17: 3:30&ndash;5:00 PM
+<br>Tuesday, August 18: 3:30&ndash;5:00 PM
+<br>Wednesday, August 19: 3:30&ndash;5:00 PM
+</p>
+
+<p>
+<b>Instructor</b>:
+<br>&nbsp; Professor <a href="http://www.tamarabroderick.com">Tamara Broderick</a>
+<br>&nbsp; Email: <img src="img/broderick_email.png" height=16em style="position: relative; top: 1.5px;">
+</p>
+
+<hr>
+
+<h2>Description</h2>
+
+Nonparametric Bayesian methods make use of infinite-dimensional mathematical structures to allow the practitioner to learn more from their data as the size of their data set grows. What does that mean, and how does it work in practice? In this tutorial, we'll cover why machine learning and statistics need more than just parametric Bayesian inference. We'll introduce such foundational nonparametric Bayesian models as the Dirichlet process and Chinese restaurant process and touch on the wide variety of models available in nonparametric Bayes. Along the way, we'll see what exactly nonparametric Bayesian methods are and what they accomplish.
+
+<h2>Materials</h2>
+<ul>
+<li><a href="https://github.com/tbroderick/bnp_tutorial/blob/2015mit/README.txt">README</a> for demos </li>
+<li><a href="files/broderick_mit_bnp_summer2015_part1.pdf">Slides for Part 1</a>
+	<ul>
+	<li>Demo 1 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2015mit/ex1_beta.R">[code]</a>: Beta random variable and random distribution intuition </li>
+	<li>Demo 2 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2015mit/ex2_diri.R">[code]</a>: Dirichlet random variable and random distribution intuition </li>
+	<li>Demo 3 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2015mit/ex3_largeK_distr.R">[code]</a>: K large relative to N intuition; empty components </li>
+	<li>Demo 4 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2015mit/ex4_largeK_count.R">[code]</a>: K large relative to N intuition; growth of number of clusters </li>
+	</ul>
+	</li>
+<li><a href="files/broderick_mit_bnp_summer2015_part2.pdf">Slides for Part 2</a>
+	<ul>
+	<li>Demo 5 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2015mit/ex5_gem.R">[code]</a>: GEM random distribution intuition </li>
+	<li>Demo 6 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2015mit/ex6_dpmm.R">[code]</a>: An exact DPMM simulator </li>
+	</ul>
+	</li>
+<li><a href="files/broderick_mit_bnp_summer2015_part3.pdf">Slides for Part 3</a>
+	<ul>
+	<li>Demo 7 <a href="https://github.com/tbroderick/bnp_tutorial/blob/2015mit/ex7_sampler.R">[code]</a>: A CRP mixture model sampler </li>
+	</ul>
+	</li>
+</ul>
+
+<h2>Prerequisites</h2>
+<ul>
+<li>Know what a prior, likelihood, and posterior are.
+<li>Know how to use Bayes' Theorem to calculate a posterior for both discrete and continuous parametric distributions.
+<li>Understand what a generative model is.
+<li>Have a basic idea of what Gibbs sampling is and when it is useful (at least check out the Wikipedia article in advance).
+</ul>
+
+<h3>What we won't cover</h3>
+Gaussian processes are an important branch of nonparametric Bayesian modeling, but we won't have time to cover them here. We'll be focusing on the discrete, or Poisson point process, side of nonparametric Bayesian inference. 
+
+</body>
+
+</html>
